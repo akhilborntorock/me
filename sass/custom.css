@@ -1,0 +1,136 @@
+#movetotop {
+  background-color: #ffdd00;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#movetotop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#movetotop:hover, #movetotop:active, #movetotop:focus {
+  background: #ccb100;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+#movetotop i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 96%;
+}
+
+header {
+  position: fixed;
+  -webkit-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+
+header.scroll {
+  background: #fff;
+  color: #000;
+  padding: 1em 0;
+  -webkit-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+
+header.scroll a {
+  color: #000 !important;
+}
+
+header.scroll .mysite-logo::after {
+  background: #000;
+}
+
+.mysite-about {
+  padding-bottom: 0 !important;
+}
+
+.nopad {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.about-info:last-child {
+  margin-bottom: 0;
+}
+
+.mgn-tp-3 {
+  margin-top: 3rem;
+}
+
+.services img {
+  width: 60px;
+}
+
+#mysite-subscribe .resume i {
+  margin-right: 10px;
+}
+
+.contact-info a {
+  color: #1a1a1a !important;
+}
+
+.contact-info a:hover {
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  color: #002bdc !important;
+}
+
+.contact-info li span {
+  background-color: #002bdc;
+  color: #fff;
+}
+
+.contact-info li span:hover {
+  background-color: #ffdd00;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.contact-info li span i {
+  color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .mysite-services .flex-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mysite-services .flex-box .services {
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=custom.css.map */

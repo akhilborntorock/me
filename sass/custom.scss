@@ -1,0 +1,124 @@
+$primary:#002bdc;
+$secondary:#ffdd00;
+$white:#fff;
+$black: #000;
+$txt:#1a1a1a;
+#movetotop {
+    background-color: $secondary;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $black;
+    cursor: pointer;
+    z-index: 1000;
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        background: darken($secondary, 10%);
+        text-decoration: none;
+        color: $white;
+        transition: all 0.4s ease-out;
+    }
+    i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 96%;
+    }
+}
+
+header {
+    position: fixed;
+    transition: background-color 0.4s ease-out;
+    &.scroll {
+        background: $white;
+        color: $black;
+        padding: 1em 0;
+        transition: background-color 0.4s ease-out;
+        a {
+            color: $black !important;
+        }
+        .mysite-logo::after {
+            background: $black;
+        }
+    }
+}
+
+.mysite-about {
+    padding-bottom: 0 !important;
+}
+
+.nopad {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.about-info:last-child {
+    margin-bottom: 0;
+}
+
+.mgn-tp-3 {
+    margin-top: 3rem;
+}
+
+.services {
+    img {
+        width: 60px;
+    }
+}
+
+#mysite-subscribe {
+    .resume {
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+
+.contact-info {
+    a {
+        color: $txt !important;
+        &:hover {
+            text-decoration: none;
+            transition: all 0.4s ease-out;
+            color: $primary !important;
+        }
+    }
+    li {
+        span {
+            background-color: $primary;
+            color: $white;
+            &:hover {
+                background-color: $secondary;
+                transition: all 0.4s ease-out;
+            }
+            i {
+                color: $white;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    .mysite-services {
+        .flex-box {
+            display: flex;
+            .services {
+                height: 100%;
+            }
+        }
+    }
+}
