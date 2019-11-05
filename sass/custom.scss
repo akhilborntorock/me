@@ -297,6 +297,12 @@ section {
     }
 }
 
+.mysite-social-icons {
+    a span {
+        color: $white;
+    }
+}
+
 @media screen and (min-width:992px) {
     .mysite-services {
         .flex-box {
@@ -304,6 +310,42 @@ section {
             .services {
                 height: 100%;
             }
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    .mysite-social-icons {
+        display: flex;
+        a span {
+            display: none;
+        }
+        a {
+            background: darken($primary, 10%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0;
+            margin-right: 15px;
+            &::last-child {
+                margin-right: 0px;
+            }
+            i {
+                position: relative;
+                top: inherit;
+                right: inherit;
+            }
+        }
+    }
+    .mysite-footer .copyright {
+        margin-top: 0 !important;
+    }
+    footer {
+        .row-padded-bottom {
+            margin-bottom: 0;
         }
     }
 }

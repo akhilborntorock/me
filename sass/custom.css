@@ -323,6 +323,10 @@ section h1::after {
   background: #1a1a1a;
 }
 
+.mysite-social-icons a span {
+  color: #fff;
+}
+
 @media screen and (min-width: 992px) {
   .mysite-services .flex-box {
     display: -webkit-box;
@@ -331,6 +335,48 @@ section h1::after {
   }
   .mysite-services .flex-box .services {
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .mysite-social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mysite-social-icons a span {
+    display: none;
+  }
+  .mysite-social-icons a {
+    background: #0021a9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+    margin-right: 15px;
+  }
+  .mysite-social-icons a::last-child {
+    margin-right: 0px;
+  }
+  .mysite-social-icons a i {
+    position: relative;
+    top: inherit;
+    right: inherit;
+  }
+  .mysite-footer .copyright {
+    margin-top: 0 !important;
+  }
+  footer .row-padded-bottom {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=custom.css.map */
