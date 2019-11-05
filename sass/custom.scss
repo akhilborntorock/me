@@ -278,6 +278,25 @@ section {
     }
 }
 
+.abt-cnt {
+    p {
+        position: relative;
+    }
+    span {
+        position: relative;
+        color: $txt;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 42%;
+            left: 0;
+            background: $txt;
+        }
+    }
+}
+
 @media screen and (min-width:992px) {
     .mysite-services {
         .flex-box {
