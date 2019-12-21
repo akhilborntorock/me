@@ -327,6 +327,14 @@ section h1::after {
   color: #fff;
 }
 
+.media-show {
+  display: none;
+}
+
+.media-hide {
+  display: block;
+}
+
 @media screen and (min-width: 992px) {
   .mysite-services .flex-box {
     display: -webkit-box;
@@ -377,6 +385,18 @@ section h1::after {
   }
   footer .row-padded-bottom {
     margin-bottom: 0;
+  }
+  .work-desc h2 {
+    font-size: 30px !important;
+  }
+  h1 {
+    font-size: 30px !important;
+  }
+  .media-show {
+    display: block;
+  }
+  .media-hide {
+    display: none;
   }
 }
 /*# sourceMappingURL=custom.css.map */
