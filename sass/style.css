@@ -1805,4 +1805,15 @@ input[type="text"] {
 .dsp-none {
   display: none;
 }
+
+.process-div {
+  margin: auto;
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+
+.flex p {
+  margin-bottom: 0 !important;
+  margin-left: 10px;
+}
 /*# sourceMappingURL=style.css.map */
