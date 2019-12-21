@@ -1816,4 +1816,12 @@ input[type="text"] {
   margin-bottom: 0 !important;
   margin-left: 10px;
 }
+
+.btn-behance {
+  padding: 20px 50px;
+}
+
+.align-cntr {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
